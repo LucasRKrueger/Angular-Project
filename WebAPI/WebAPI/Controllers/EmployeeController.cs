@@ -20,29 +20,12 @@ namespace WebAPI.Controllers
         public IQueryable<Employee> GetEmployees()
         {
             return db.Employees;
-        }
-
-        // GET: api/Employee/5
-        [ResponseType(typeof(Employee))]
-        public IHttpActionResult GetEmployee(int id)
-        {
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(employee);
-        }
+        }      
 
         // PUT: api/Employee/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutEmployee(int id, Employee employee)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        {            
 
             if (id != employee.EmployeeID)
             {
@@ -73,12 +56,7 @@ namespace WebAPI.Controllers
         // POST: api/Employee
         [ResponseType(typeof(Employee))]
         public IHttpActionResult PostEmployee(Employee employee)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
+        {           
             db.Employees.Add(employee);
             db.SaveChanges();
 
@@ -89,11 +67,7 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(Employee))]
         public IHttpActionResult DeleteEmployee(int id)
         {
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
+            Employee employee = db.Employees.Find(id);           
 
             db.Employees.Remove(employee);
             db.SaveChanges();
