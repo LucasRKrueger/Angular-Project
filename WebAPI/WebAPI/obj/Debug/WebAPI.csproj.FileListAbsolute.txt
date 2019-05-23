@@ -101,3 +101,6 @@ C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\obj\Debug\W
 C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\obj\Debug\WebAPI.csproj.CopyComplete
 C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\obj\Debug\WebAPI.pdb
+C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\bin\System.Web.Cors.dll
+C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Lucas\Desktop\Projeto Angular\Angular-Project\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
